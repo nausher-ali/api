@@ -25,7 +25,9 @@ SECRET_KEY = 'eki3256!%v9sagqcvg(g8hn33p4oa$dn=*xw^pix-a*@y_zpi('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    *,
+    ]
 
 
 # Application definition
