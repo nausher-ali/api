@@ -1,1 +1,1 @@
-web : gunicorn openapi.wsgi
+web: gunicorn openapi.wsgi
