@@ -26,6 +26,7 @@ SECRET_KEY = 'eki3256!%v9sagqcvg(g8hn33p4oa$dn=*xw^pix-a*@y_zpi('
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'peaceful-retreat-54509.herokuapp.com'
 ]
 
@@ -78,8 +79,11 @@ WSGI_APPLICATION = 'openapi.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'upesapi',
+        'USER': 'postgres',
+        'PASSWORD': '7607',
+        'HOST': 'localhost'
     }
 }
 
